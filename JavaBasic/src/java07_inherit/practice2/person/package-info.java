@@ -1,0 +1,1 @@
+package java07_inherit.practice2.person;
