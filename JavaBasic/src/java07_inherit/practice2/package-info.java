@@ -1,1 +1,0 @@
-package java07_inherit.practice2;

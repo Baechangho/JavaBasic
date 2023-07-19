@@ -1,1 +1,0 @@
-package java06_class.getset;

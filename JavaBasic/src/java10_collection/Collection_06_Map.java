@@ -87,15 +87,6 @@ public class Collection_06_Map {
 		System.out.println("entry Set : " + entryset);
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 	
 }
