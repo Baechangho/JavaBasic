@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+	<input type="text" name="msg">
+	<button id="btnSend">전송</button>
+</div>
+</body>
+</html>

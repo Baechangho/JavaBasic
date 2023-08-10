@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+/* 마우스가 올라간 상태의 div태그 요소 선택 */
+/* -> mouseover 이벤트에 CSS적용 */
+/* -> mouseout 이벤트에 CSS해제 */
+div:hover {
+	color: red;
+}
+
+/* 마우스가 올라간 상태의 span태그 선택 */
+span:hover {
+	background-color: green;
+}
+
+/* ---------------------------------------------- */
+
+/* 마우스 눌림(mousedown)이 발생한 span태그 선택 */
+span:active {
+	color: orange;
+	font-size: 30px;
+}
+
+/* 마우스 눌림이 발생한 button태그 선택 */
+button:active {
+	color: blue;
+}
+
+/* 마우스 눌림이 발생한 type속성이 "button"인 input 태그 선택 */
+input[type="button"]:active {
+	color: tomato;
+}
+
+/* ---------------------------------------------- */
+
+a {
+	/* 밑줄 제거 */
+	text-decoration: none;
+}
+
+/* 방문 전 상태의 a태그 선택 */
+a:link {
+	color: green;
+	
+	/* 밑줄 제거 */
+	text-decoration: none;
+}
+
+/* 방문 후 상태의 a태그 선택 */
+a:visited {
+	color: red;
+}
+
+/* ctrl + shift + del : 브라우저 인터넷 사용기록 삭제 단축키 */
+/* 주의 : 자동 로그인, 로그인 유지 걸어놓은 거 풀림 */
+
+/* ---------------------------------------------- */
+
+/* 비활성 상태 선택 - 사용자의 입력을 못 받는 상태 */
+:disabled {
+	font-size: 8px;
+}
+
+/* 활성 상태 선택 */
+:enabled {
+	font-style: italic;
+}
+
+/* ---------------------------------------------- */
+
+/* id가 chk인 요소의 인접형제 label태그 */
+#chk + label {
+	border: 1px solid blue;
+}
+
+/* checkbox 또는 radio 가 checked상태일 때 선택 */
+:checked{
+	width: 50px;
+	height: 50px;
+}
+
+#chk {
+	cursor: pointer;	/* 손가락 */
+	cursor: wait;		/* 대기 상태 */
+}
+
+/* checked된 상태의 #chk의 인접 형제 label요소 선택 */
+#chk:checked +label {
+	background: tomato;
+}
+
+/* ---------------------------------------------- */
+
+/* 포커스를 얻은 요소 선택 */
+:focus {
+	color: maroon;
+}
+
+/* focus - 포커스 상태를 얻을 때 발생하는 이벤트 */
+/* blur - 포커스 상태를 잃었을 때 발생하는 이벤트 */
+
+/* ---------------------------------------------- */
+
+/* 자식이 없는 요소 선택 */
+/* -> <hr>이나 <input>같은 닫는 태그를 사용하지 않는 요소들도 함께 선택된다 */
+/* :empty { */
+
+/* 자식이 없는 div 요소 선택 */
+div:empty {
+	height: 20px;
+	background: yellow;
+}
+</style>
+</head>
+<body>
+
+<div>
+<span>span태그 안쪽</span>span태그 바깥쪽<br>
+<input type="button" value="확인"><br>
+
+<a href="https://www.naver.com">네이버</a>
+<a href="https://www.daum.net">다음</a>
+<a href="https://www.daum.net">다음</a>
+<hr>
+
+<label><input type="checkbox">확인</label>
+<label><input type="radio">라디오</label>
+
+<input type="checkbox" id="chk">
+<label for="chk">체크</label>
+<hr>
+
+<button disabled="disabled">비활성 버튼</button>
+<button>활성 버튼</button>
+<hr>
+
+<div></div>
+<input type="text">
+
+</div>
+
+
+</body>
+</html>

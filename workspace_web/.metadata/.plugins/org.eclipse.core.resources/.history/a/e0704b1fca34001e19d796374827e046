@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//QUIZ.
+//현재 시 분 초 를 1초마다 출력하기
+
+//console출력
+//시:분:초 형태로 출력한다
+setInterval(d.getHours() + d.getMinutes() + d.getSeconds(), 1000)
+
+console.log(d.getHours())			//시
+console.log(d.getMinutes())			//분
+console.log(d.getSeconds())			//초
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

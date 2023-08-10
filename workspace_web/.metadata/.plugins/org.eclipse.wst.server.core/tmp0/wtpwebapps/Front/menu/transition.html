@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div {
+	width: 100px; 
+	height: 100px;
+	background: #ccc;
+	
+	/* 모든 CSS 속성의 변화에 2초가 걸리도록 설정 */
+/* 	transition:all 2s; */
+	
+	/* 각각의 속성 변화에 걸리는 시간을 다르게 설정 */
+	transition: width 0.3s, height 2s, background 3s;
+}
+
+div:hover {
+	width: 200px;
+	height: 200px;
+	background: #333;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+<h1>transition 속성</h1>
+<hr>
+
+<div></div>
+
+</body>
+</html>

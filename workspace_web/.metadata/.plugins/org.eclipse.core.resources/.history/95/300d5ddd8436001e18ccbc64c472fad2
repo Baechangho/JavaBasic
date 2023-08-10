@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	
+	var $myDiv = $("div#myDiv")
+	
+	//.html() - .innerHTML 역할
+	console.log($myDiv.html())
+	
+	//기존에 가지고 있던 innerHTML값을 덮어씌운다
+	$myDiv.html("<h3>HTML DIV</h3>")
+	
+	//----------------------------------------------------
+	
+	$myDiv.html($myDiv.html() + '<h3>html추가</h3>')
+	
+	//----------------------------------------------------
+
+	var h = $myDiv.html()
+	h+= "<h3>한번 더 추가</h3>"
+	
+	$myDiv.html(h)
+	
+	//----------------------------------------------------
+
+	console.log($myDiv.text())
+	
+	
+	
+})
+</script>
+</head>
+<body>
+<div id="myDiv">
+<h1>jQuery 테스트</h1>
+</div>
+</body>
+</html>

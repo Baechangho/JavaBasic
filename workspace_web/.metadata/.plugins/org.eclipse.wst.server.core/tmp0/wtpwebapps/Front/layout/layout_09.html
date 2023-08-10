@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+/* display: table; */
+table {
+	border: 1px solid #ccc;
+	
+	/* 내부 정렬 */
+	text-align: center;
+	
+	/* 외부 정렬 */
+	margin: 20px auto;
+	
+	padding: 5px;
+	
+	width: 300px;
+	height: 250px;
+	
+/* 	---------------------------------------------------- */
+	
+	/* 테이블이 가질 수 있는 전체 너비를
+		적절히 나누어서 테이블셀들의 너비로 결정한다 */
+		
+	/* 데이터가 많은 셀은 넓게 적은 셀은 좁게 */
+/* 	table-layout: auto; */
+	
+	/* 테이블셀의 너비를 모두 균등하게 분배한다 */
+	table-layout: fixed;
+	
+}
+
+/* display: table-row; */
+tr {
+	/* width, margin, padding, border는 화면에 적용되지 않는다 */
+	width: 500px;
+	margin: 20px;
+	padding: 30px;
+	border: 3px solid #ccc;
+	
+	/* 적용된다 */
+	/* 기본값은 자식 요소의 높이만큼 ( auto ) */
+	height: 100px;
+}
+
+/* display: table-cell; */
+th, td {
+	
+	/* width, height 적용 가능 */
+	
+	/* 부모table의 width가 설정되어있으면 더 넓어질 수 없다 */
+	width: 100px;
+	
+	/* 부모table의 height 설정값보다 더 커질 수 있다 */
+	height: 110px;
+	
+	
+	/* width는 <table>에 적용된 설정값을 우선 적용시킨다 */
+	/* height는 콘텐츠의 최종 높이(합계)를 우선 적용시킨다 */
+	
+	
+	/* 적용 된다 */
+	padding: 5px;
+	
+	/* 적용되지 않는다 */
+	margin: 10px;
+}
+
+th {
+	border: 1px solid #f99;
+}
+
+td {
+	border: 1px solid #99f;
+}
+
+</style>
+
+</head>
+<body>
+
+<table>
+
+<tr>
+	<th>하나</th>
+	<th>둘</th>
+	<th>셋</th>
+</tr>
+
+<tr>
+	<td>A</td>
+	<td>B</td>
+	<td>C</td>
+</tr>
+
+<tr>
+	<td>Apple</td>
+	<td>Banana</td>
+	<td>Cherry</td>
+</tr>
+</table>
+
+</body>
+</html>

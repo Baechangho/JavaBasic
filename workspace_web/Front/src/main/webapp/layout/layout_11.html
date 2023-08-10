@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+.box {
+	width: 150px;
+	height: 50px;
+	
+	color: #999;
+	border: 1px solid red;
+} 
+
+/* ----------------------------------------------------- */
+
+/* 요소의 위치 지정 속성 설정 */
+.absolute {
+	position: absolute;
+}
+
+/* ----------------------------------------------------- */
+
+#a1 {
+	top: 100px;
+	left: 50px;
+}
+
+#a2 {
+	bottom: 100px;
+	right: 100px;
+}
+
+/* ----------------------------------------------------- */
+
+#a4 {
+	border: 1px solid blue;
+	
+	top: 20px;
+	left: 20px; 
+}
+
+#a3 {
+	bottom: 200px;
+	right: 300px; 
+}
+
+/* ----------------------------------------------------- */
+
+.relative {
+	position: relative;
+}
+
+#r1 {
+	top: 100px;
+	left: 200px; 
+}
+
+/* ----------------------------------------------------- */
+
+.fixed {
+	position: fixed;
+	
+	bottom: 0;
+	right: 0;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="a1" class="box absolute">절대위치 박스 1</div>
+<div id="a2" class="box absolute">절대위치 박스 2</div>
+
+<div id="a3" class="box absolute">
+	<div id="a4" class="box absolute">
+		절대위치 박스 4
+	</div>
+</div>
+
+안녕하세요<br>
+안녕하세요<br>
+안녕하세요<br>
+안녕하세요<br>
+안녕하세요<br>
+안녕하세요<br>
+안녕하세요<br>
+안녕하세요<br>
+안녕하세요<br>
+안녕하세요<br>
+안녕하세요<br>
+안녕하세요<br>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mauris mauris, facilisis non tortor sed, ultricies vehicula odio. Ut pulvinar interdum arcu, et aliquet quam tristique sed. Mauris placerat eros ac diam convallis, in venenatis turpis condimentum. Aenean molestie urna sed finibus iaculis. Sed lectus diam, gravida non metus ac, eleifend dictum erat. Curabitur interdum tincidunt metus, ac tincidunt lacus aliquet et. Nunc ultricies turpis nisi, nec venenatis erat euismod sit amet. Pellentesque at commodo eros.</p>
+
+<p>Nulla facilisi. Etiam nec ex sed augue hendrerit tincidunt a nec magna. Donec tempus nibh et lectus accumsan, non rhoncus enim ultrices. Donec eu tristique leo. Integer sit amet nisl sem. Quisque malesuada leo nisi, a cursus urna semper a. Etiam eget tempus nisi. Sed eleifend faucibus nulla at pharetra.</p>
+
+<p>Suspendisse enim diam, commodo sit amet lectus eu, vestibulum tincidunt nunc. Ut sed quam gravida lacus sodales maximus. Ut convallis at purus in aliquet. Curabitur dignissim mauris ac eleifend mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis ullamcorper hendrerit elit. Nunc malesuada magna mi, nec vestibulum felis imperdiet vel. Vestibulum augue libero, sodales at odio a, dignissim facilisis lectus. Maecenas scelerisque, elit sit amet feugiat finibus, metus augue fringilla odio, in commodo risus sapien eu dolor. Vivamus luctus bibendum purus. Praesent nec enim nec elit lacinia placerat non sit amet ipsum. Phasellus vitae erat vitae nisl aliquet feugiat et eget ante. Vivamus blandit at nulla quis mattis. Curabitur rhoncus tempus vestibulum. Integer luctus in augue ut viverra. Quisque bibendum pretium justo, sollicitudin sagittis lorem ullamcorper vel.</p>
+
+
+<div id="r1" class="box relative">상대 위치 박스</div>
+
+
+<p>Ut dolor mi, hendrerit vitae tempus id, finibus id sem. Duis ut hendrerit orci. Morbi facilisis fermentum est euismod malesuada. Vestibulum gravida ipsum mauris, at aliquam felis pretium vitae. Curabitur fringilla, erat in rhoncus suscipit, ante nunc efficitur eros, vitae suscipit purus purus eget sapien. Sed iaculis tincidunt ipsum. Integer nisl felis, imperdiet quis ultricies quis, posuere sollicitudin turpis. Proin velit risus, condimentum a commodo eu, mollis non libero. In mi lorem, tristique a auctor eu, ullamcorper sit amet nisl. Ut porta velit ac arcu iaculis finibus. Sed augue arcu, tincidunt a quam eget, mattis sollicitudin nibh.</p>
+
+<p>Fusce molestie libero nunc, auctor euismod ex congue et. Donec tincidunt orci ante, nec tincidunt nisl ultrices eget. Integer finibus est non consequat dignissim. Mauris et venenatis libero. Suspendisse sollicitudin eros fermentum, vehicula enim id, sagittis diam. Nullam sed orci euismod, semper lacus sed, ornare orci. Proin ac condimentum orci. Suspendisse euismod odio neque, et scelerisque elit feugiat quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean tristique nisl a sollicitudin sodales. Pellentesque vel magna aliquam, vulputate tortor vitae, volutpat dui.</p>
+
+
+
+<!-- absolute박스의 기준점으로 relative부모 박스를 적용한다 -->
+<div class="relative">
+	
+	<div class="box absolute">
+		부모 태그 안에 생성된 절대위치 박스
+	</div>
+	
+</div>
+
+<div class="box fixed">고정 위치 박스</div>
+
+</body>
+</html>

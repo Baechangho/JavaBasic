@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//NaN, Not a Number
+
+console.log(NaN)
+console.log(NaN, typeof NaN)
+
+console.log(NaN + 12345)
+
+console.log("------------------------")
+
+//parseInt() 내장함수
+//매개변수의 문자를 숫자로 변환(치환)하는 함수
+//숫자 형식이 아니면 NaN을 반환한다
+
+console.log(parseInt('3456')) //'3456' -> 3456
+
+console.log(parseInt('589QWER'))	//'589QWER' -> 589
+console.log(parseInt('ABC8745'))	//'ABC8745' -> NaN
+
+console.log("------------------------")
+
+//parseFloat()
+
+console.log(parseFloat("345.376"))
+console.log(parseInt("345.376"))
+
+console.log(parseFloat("7687"))
+
+console.log("------------------------")
+
+//Number()
+console.log(Number("5874.37"))
+console.log(Number("778"))
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

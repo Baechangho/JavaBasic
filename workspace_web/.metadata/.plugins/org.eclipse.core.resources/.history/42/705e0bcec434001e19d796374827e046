@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//전역 변수
+var result
+
+//덧셈 함수
+function add(n1, n2){
+	//전역 변수에 덧셈 결과 저장하기
+	result = n1 + n2;
+}
+
+//결과 출력 함수
+function print(){
+	console.log(result);
+}
+
+//덧셈 수행
+add(445, 674);
+
+//출력
+print();
+
+//-------------------------------------------------------
+
+//콜백 함수, Callback Function
+//함수를 직접 호출해서 사용하지 않고
+//외부의 동작(다른 요수의 실행)에 의해서 호출되도록 만들어진 함수
+function sum(n1, n2, callback){
+	
+	//덧셈 수행
+	var res = n1 + n2;
+	
+	//결과값을 이용한 함수 호출
+	callback(res);
+}
+
+//결과값을 console로 출력하는 함수
+function display1(data) {
+	console.log("덧셈 결과", data);
+}
+
+//sum함수 호출
+sum(11, 22, display1);
+
+//-------------------------------------------------------
+
+//결과물을 alert로 띄우는 함수
+function display2(data){
+	alert("결과값 : " + data)
+}
+
+//sum함수 호출
+sum(55, 66, display2);
+
+//-------------------------------------------------------
+
+//sum함수 호출
+sum(888, 999, function(){
+	document.write("<h1>" + data + "</h1>")
+})
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

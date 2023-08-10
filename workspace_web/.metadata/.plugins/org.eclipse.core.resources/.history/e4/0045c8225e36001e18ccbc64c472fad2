@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	
+	//선택자에 대한 노드 요소를 찾아 jQuery DOM 객체로 반환한다
+	$("CSS Selector")
+	
+	//------------------------------------------------------------
+	
+	//#p1 노드를 찾아 jQuery DOM객체로 저장한다
+	var jQueryP1 = $("#p1")
+	
+	console.log("---jQueryP1---")
+	console.log(jQueryP1)
+	
+	//------------------------------------------------------------
+		
+	//#p1 노드를 찾아 JS DOM 객체로 반환한다
+	var jsP1 = document.getElementById("p1")
+	
+	console.log("---jsP1---")
+	console.log(jsP1)
+	
+	console.log(p1)
+	
+	//------------------------------------------------------------
+
+	//순수 JS DOM객체를 이용한 스타일 지정
+	p1.style.color = 'red'
+	
+	//에러, jQuery DOM객체에 순수 JS DOM API를 적용할 수 없다
+// 	jQueryP1.style.background = '#ccc'
+	
+	//jQuery DOM객체에 jQuery DOM API를 이용한 스타일 적용
+	jQueryP1.css("border", "1px solid #ccc")
+	
+	//------------------------------------------------------------
+	
+	
+})
+</script>
+</head>
+<body>
+
+<div>
+	<p id="p1">하이</p>
+	<p class="p2">Hello</p>
+	<p id="p3">Welcome</p>
+</div>
+
+
+
+</body>
+</html>

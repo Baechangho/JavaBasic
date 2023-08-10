@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script> -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script type="text/javascript">
+//순수 JS를 이용한 DOM 이용 코드
+window.onload = function(){
+	
+}
+</script>
+
+
+<script type="text/javascript">
+//jQuery를 이용한 DOM 이용 코드
+$(document).ready(function(){
+	
+})
+//-------------------------------------
+//jQuery를 이용한 DOM 이용 코드
+$(function(){
+	
+})
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

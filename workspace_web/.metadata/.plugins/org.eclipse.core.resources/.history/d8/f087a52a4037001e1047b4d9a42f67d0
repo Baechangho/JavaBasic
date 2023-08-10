@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+var str = "apple banana cherry application"
+
+//----------------------------------------------
+
+//문자열.match(정규식)
+
+var res = str.match(/apple/)
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+var data
+
+console.log( 'data', data )	//undefined
+
+console.log( 'data', typeof data )	//undefined
+
+//num is not defined 에러가 발생한다
+// console.log(num)
+
+var obj = null
+console.log('obj', obj)
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

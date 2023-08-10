@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//변수의 스코프, Scope
+//변수의 유효범위
+//변수의 인식범위
+//변수를 사용할 수 있는 범위
+
+//----------------------------------------------
+
+//에러, 선언되지 않은 변수(식별자)를 사용함
+// console.log(data)
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

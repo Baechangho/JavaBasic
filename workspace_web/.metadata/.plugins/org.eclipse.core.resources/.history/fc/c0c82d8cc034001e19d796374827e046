@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//함수 안에 함수를 중첩시켜 정의하기
+
+function func1(){
+	
+	function func2(){
+		
+		function func3(){
+			
+		}
+	}
+	function func4(){
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

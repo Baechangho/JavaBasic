@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+<script type="text/javascript">
+$(function() {
+	
+	//div태그에 st4 클래스 항목 추가하기
+	$("div").addClass("st4")
+	
+	//div태그에 st2 클래스 항목 제거하기
+	$("div").removeClass("st2")
+
+	//div태그에 모든 클래스 항목 제거하기	
+	//-> 설정값들은 모두 지워지고 class속성은 남는다
+	$("div").removeClass()
+	
+	//-------------------------------------------------
+	
+	$("p").addClass('red')
+	
+	$("p").eq(0).addClass('blue')
+	
+	$("p").eq(1).removeClass('red')
+	
+	//'red'클래스 항목을 토글한다
+	$("p").eq(2).toggleClass('red')
+	
+	$('div').click(function(){
+		$('p').eq(2).toggleClass('blue')
+	})
+	
+	//-------------------------------------------------
+	
+	//HTML 표준 속성 설정
+	$("div").attr("id", "myDiv")
+	
+	//HTML 비표준 속성 설정
+	$("div").attr("abcde", 12345)
+	
+	//attr() 함수를 이용하여 표준/비표준 속성 모두 관리할 수 있다
+	
+	//-------------------------------------------------
+	
+	//CSS Property를 style속성의 일부로 설정한다
+	$("p").eq(2).css("background", "orange")
+	
+	//잘못 사용한 코드(속성을 설정하고싶으면 위에 코드로)
+	//HTML Attribute를 설정한다
+	$("p").eq(2).attr("background", "orange")
+	
+	//-------------------------------------------------
+	
+	$("p").eq(0).attr("style", "width: 200px")
+	
+})
+</script>
+
+<style type="text/css">
+.red {color: red;}
+.blue {color: blue;}
+</style>
+
+</head>
+<body>
+<div class="st1 st2 st3">
+	<p>하나</p>
+	<p>둘</p>
+	<p>셋</p>
+</div>
+</body>
+</html>

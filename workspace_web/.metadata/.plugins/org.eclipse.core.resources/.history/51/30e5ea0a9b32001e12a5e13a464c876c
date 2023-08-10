@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+function hello() {
+	console.log("안녕하세요")
+}
+
+function thanks() {
+	console.log("감사해요")
+}
+
+//----------------------------
+
+//매개변수로 함수 전달받기
+//리턴데이터로 함수 반환하기
+function action(fn){
+	fn()
+	return fn
+}
+
+//----------------------------
+
+//에러, 전달한 number데이터를 함수 호출코드로 사용함
+// action( 123 )
+
+//----------------------------
+
+//함수를 전달인자로 전달하여 action함수에서
+//호출하도록 만들기
+action(hello)
+action(thanks)
+
+//----------------------------
+
+//전달인자로 익명함수 전달하기
+action(function(){
+	console.log("익명함수 전달")
+})
+
+//----------------------------
+
+//action함수의 전달인자로 hello함수를 전달한다
+//action함수에서 hello함수를 호출한다(실행)
+//action함수는 hello함수를 리턴하고 f변수에 저장된다
+//f변수를 이용하여 hello함수를 호출한다(함수 실행)
+
+var f = action(hello)
+f()
+
+//----------------------------
+
+action(action(action(action(thanks))))();
+
+//----------------------------
+
+(function(){
+	console.log("익명 함수")
+}());
+
+(function(data){
+	console.log(data, "익명함수 전달인자")
+}(77777))
+
+//----------------------------
+
+// //기본 함수의 형태
+// function 이름(매개변수){
+// 	실행코드
+// }
+var hola = function(){
+	console.log("hola")
+}
+
+// //화살표 함수의 형태
+// (매개변수) => {실행 코드}
+var hola = () => {
+	console.log("hola")
+}
+
+(() => {console.log("hola")})()
+
+var func = (data1, data2) => { return data1 + data2;}
+
+console.log(func(11,22))
+
+var func2 = (data1, data2) => data1 + data2;
+
+console.log(func(11,22))
+</script>
+</head>
+<body>
+
+</body>
+</html>

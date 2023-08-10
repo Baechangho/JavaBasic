@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//함수 안에 함수를 중첩시켜 정의하기
+
+function func1(){
+	
+	function func2(){
+		
+		function func3(){
+			
+		}
+	}
+	function func4(){
+		
+	}
+}
+
+//---------------------------------------------------
+
+//전역변수
+var num = 111
+
+function hello(){
+	
+	//전역변수 num에 접근한다
+	console.log(num)
+	//---------------------------------------------------
+	
+	var num = 222;
+}
+
+hello()
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

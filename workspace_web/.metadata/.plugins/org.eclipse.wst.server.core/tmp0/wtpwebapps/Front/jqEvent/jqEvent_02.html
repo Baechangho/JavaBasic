@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	
+	$("#btnOk").css('width', '400px')
+// 	$("#btnOk").on("click", sayHi)
+// 	$("#btnOk").on("mouseenter", red)
+// 	$("#btnOk").on("mouseleave", blue)
+	
+	//---------------------------------
+	
+	$("#btnOk").on({
+		"click": sayHi
+		, "mouseenter": red
+		, "mouseleave": blue
+	})
+	
+	//---------------------------------
+	
+	$("#btnAlert").one({
+		"click": sayHi
+		, "mouseenter": red
+		, "mouseleave": blue
+	})
+	
+	//---------------------------------
+	
+	$("#btnOk").on("click", function(){
+		
+		//모든 이벤트를 제거한다
+		//on, one 상관없이 모두 제거해준다
+		$("#btnAlert").off()
+	})
+	
+	//---------------------------------
+	
+	//#btnAlert에 dblclick이벤트를 등록한다
+	$("#btnAlert").dblclick(function(){
+		console.log("#btnAlert dbclick")
+	})
+	
+	//#btnOk에 mouseover이벤트를 등록한다
+	$("#btnOk").mouseover(function(){
+		console.log("#btnOk mouseover")
+		
+		//#btnAlert에 dbclick이벤트 발생시키기
+		$("#btnAlert").dblclick()
+		$("#btnAlert").trigger("dbclick")
+		
+	})
+	
+})
+
+function sayHi(){
+	console.log("sayHi")
+}
+function red(){
+	console.log("red")
+}
+function blue(){
+	console.log("blue")
+}
+
+</script>
+</head>
+<body>
+<div id="myDiv">
+	<button id="btnOk">확인</button>
+	<button id="btnAlert">알림</button>
+</div>
+</body>
+</html>

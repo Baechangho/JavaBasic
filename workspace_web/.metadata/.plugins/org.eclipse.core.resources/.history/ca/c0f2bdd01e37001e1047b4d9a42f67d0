@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+	<button id="btnAlert">알림</button>
+	
+	<button id="btnCancle">확인 이벤트 제거</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+var data
+
+console.log( 'data', data )	//undefined
+
+console.log( 'data', typeof data )	//undefined
+
+//num is not defined 에러가 발생한다
+// console.log(num)
+
+var obj = null
+console.log('obj', obj)
+console.log('obj', typeof obj)
+
+console.log('-----------')
+
+if( data == undefined ){
+	console.log("변수가 초기화되지 않음")
+	console.log('자료형도 결정되지 않은 상태')
+}
+
+console.log('-----------')
+
+if( data == null){
+	console.log("참조 대상이 없는 상태")
+}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

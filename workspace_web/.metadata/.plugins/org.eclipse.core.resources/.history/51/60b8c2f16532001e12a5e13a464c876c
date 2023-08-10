@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//JS 데이터타입
+//------------------------------------------------------------
+
+//Number
+console.log(12345)
+console.log(123.456)
+
+//String
+console.log('Apple')
+console.log("Banana")
+
+//Boolean
+console.log(true)
+console.log(false)
+
+console.log("-----")
+
+//Object 타입
+console.log( {} )
+console.log( { "key":"value", 1:'Apple', b:234, 'c':true} )
+
+//객체(Object)의 key는 String타입이다
+//  console.log( { "key":"value", 1:'Apple', b:234, 'c':true} )
+//==console.log( { key:"value", "1":'Apple', "b":234, "c":true} )
+//객체(Object)의 value는 JS의 모든 타입으로 사용 가능하다
+
+//key는 문자를 나타내는 "",''를 적용하지 않아도 문자로 인식
+
+console.log("-----")
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("<p>").text("둘").css({color: 'blue', background: 'red'
+	}).insertAfter($("div").find("p").eq(0))
+})
+</script>
+<style type="text/css">
+.colorBlue{color:blue;}
+.bgRed{background-color:red;}
+</style>
+</head>
+<!-- QUIZ -->
+<!-- p태그를 1개 생성 -->
+<!-- 내용물은 "둘"로 작성 -->
+
+<!-- 스타일 지정 -->
+<!-- 글자색: 파랑 -->
+<!-- 배경색: 빨강 -->
+
+<!-- 하나 둘 셋 넷 순서에 맞게 추가하기 -->
+
+<body>
+<div>
+	<p>하나</p>
+	<p>셋</p>
+	<p>넷</p>
+</div>
+</body>
+</html>

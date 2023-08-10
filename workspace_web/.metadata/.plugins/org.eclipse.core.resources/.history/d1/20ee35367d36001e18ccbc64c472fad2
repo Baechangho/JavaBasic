@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	
+	//새로운 <div>태그 노드 객체 생성하기
+	var $div = $("<div>")
+	
+	//객체는 생성되어 출력으로 확인가능
+	//하지만 DOM트리에는 추가되지 않아 화면에는 없음
+	console.log($div)
+	
+	//새로 생성된 객체는 선택되지 않음
+	//->DOM트리에 추가되지 않았음
+	console.log($("div"))
+	
+	//----------------------------------------------------
+	
+	var $myDiv = $("div#myDiv")
+	
+	//myDiv노드의 자식으로 새로운<div>($div)를 추가한다
+	$myDiv.append($div)
+	
+	var $div2 = $("<div>Hello</div>")
+	$myDiv.append($div2)
+	
+	//----------------------------------------------------
+	
+	$div.html("처음에 새로 만들었던 DIV")
+	
+	//----------------------------------------------------
+
+	var $newDiv = 
+		$("<div>")
+		.append($("<ul>")
+				.append($("<li>").html("하이"))
+				.append($("<li>").html("하이")))
+
+
+
+
+
+
+
+
+
+})
+</script>
+</head>
+<body>
+<div id="myDiv">
+	<p>안녕</p>
+</div>
+</body>
+</html>

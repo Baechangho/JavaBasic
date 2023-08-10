@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- QUIZ. -->
+<!-- div#content안에 innerHTML을 이용하여 추가하기 -->
+
+<!-- ul 목록 -->
+<!-- 	JavaScript -->
+<!-- 	DOM -->
+<!-- 	innerHTML -->
+
+<script type="text/javascript">
+window.onload = function() {
+
+	// div#content 노드 찾기
+	var content = document.getElementById("content")
+	
+	//추가될 html코드 작성하기
+	var h = ''
+	h += '<ul>'
+	h += '	<li>JavaScript</li>'
+	h += '	<li>DOM</li>'
+	h += '	<li>innerHTML</li>'
+	h += '</ul>'
+	
+	//div#content에 innerHTML 적용하기
+	content.innerHTML = h
+	
+	//------------------------------------------
+	
+	//잘못된 풀이 방식
+	//	-> 첫 <ul>태그 생성 이후 <li>태그가 자식으로
+	//	 인정되지 않는다
+// 	content.innerHTML += '<ul>'
+// 	content.innerHTML += '	<li>JavaScript</li>'
+// 	content.innerHTML += '	<li>DOM</li>'
+// 	content.innerHTML += '	<li>innerHTML</li>'
+// 	content.innerHTML += '</ul>'
+}
+
+
+
+
+//---------------------------------------------------
+// onload = () => {
+// 	console.log( document.getElementById("content") )
+// }
+</script>
+
+</head>
+<body>
+
+<div id="content"></div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

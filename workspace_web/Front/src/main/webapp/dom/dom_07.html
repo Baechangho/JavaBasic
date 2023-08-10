@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.onload = function() {
+	
+	var data1 = document.getElementsByName("data1")
+	console.log( data1 )
+	console.log( data1[0] )
+	
+	var data2 = document.getElementsByName("data2")
+	console.log( data2[0] )
+	
+	//---------------------------------------------------
+	
+	data1[0].value = "첫번째 입력 폼 필드"
+	
+	//---------------------------------------------------
+	
+	var hobbies = document.getElementsByName("hobby")
+	console.log( hobbies )
+	
+	//체크된 상태로 변경하기
+	hobbies[0].checked = "checked"
+	hobbies[1].checked = true
+	
+	console.log( hobbies[0].checked )
+	console.log( hobbies[1].checked )
+	
+}
+</script>
+</head>
+<body>
+
+<h1>name 속성값 테스트</h1>
+<hr>
+
+<form action="" method="get">
+	
+	<input type="text" name="data1"><br>
+	<input type="text" name="data2"><br><br>
+	
+	<label>영화보기 <input type="checkbox" name="hobby" value="movie"></label><br>
+	<label>음악감상 <input type="checkbox" name="hobby" value="music"></label>
+	
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

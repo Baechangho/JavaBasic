@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>form 태그</h1>
+<h3>datalist, textarea, select</h3>
+<hr>
+
+<form action="" method="get">
+	<input type="text" style="display: none;">
+	<!-- <form>에 <input>태그가 단독으로 있으면 엔터키 입력으로 submit할 수 있다 -->
+	<input type="text" name="test">
+	
+	<input type="submit">
+
+	<hr>
+
+	<!-- <datalist>태그는 화면에 보이지 않는다 -->
+	<!-- CSS속성으로 display: none; 설정되어있음 -->
+	<datalist id="fruits">
+		<option>사과</option>
+		<option value="banana">바나나</option>
+		<option value="체리">
+	</datalist>
+
+	<input list="fruits" name="f">
+	
+	<!-- <datalist>의 <option>항목들을 <input>태그의 자동완성 목록으로 보여준다 -->
+	
+	<!-- 자식 태그로 <option>태그로 선택 항목을 생성한다 -->
+	
+	<!-- <option>태그에 value속성이 적용되면 value속성값으로 입력값이 서버에 전달된다 -->
+	
+	<!-- 없으면 자식 텍스트로 작성된 내용이 전달된다 -->
+	
+	<hr>
+	
+	<label for="month">
+	결제 :
+	</label>
+	
+	<select id="month" name="month">
+		<option value="0" selected="selected">선택</option>
+		<option value="one">1 개월 </option>
+		<option value="two">2 개월 </option>
+		<option value="three">3 개월 </option>
+	</select>	
+	
+	<!-- name 속성을 select 태그에 적용 -->
+	<!-- value속성을 option 태그에 적용 -->
+	
+	<hr>
+	
+	<!-- 화면에는 보이지 않지만 submit 데이터로는 추가된다 -->
+	<input type="hidden" name="hidden_data" value="숨겨진 데이터">
+	
+	<hr>
+	
+	<label for="content">본문</label>
+	
+	<textarea rows="5" cols="40" id="content" name="content"
+	placeholder="긴 글 입력">textarea의 입력 기본값</textarea>
+	
+	<!-- textarea태그에는 value속성이 없다 -->
+	<!-- value속성이 표준 속성으로 정의되어있지 않다 -->
+	<!-- 자식 텍스트를 이용하여 전달 데이터를 설정한다 -->
+	<!-- 입력 기본값도 자식 텍스트로 작성한다 -->
+	
+	
+	<hr>
+	<button>전송</button>
+
+
+
+</form>
+
+<hr>
+<a href="http://localhost:8765/tag/tag_13.html">새로</a>
+
+</body>
+</html>

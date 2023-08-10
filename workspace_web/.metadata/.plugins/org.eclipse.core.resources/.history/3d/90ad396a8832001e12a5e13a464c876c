@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//*연산은 string타입을 대상으로 수행할 수 없다
+//string을 number로 변환해야 연산 가능하다
+
+console.log("123")
+console.log("123" * 1)
+
+console.log("------------------------")
+
+console.log(1 + 2 + 3)
+console.log("" + 1 + 2 + 3)
+console.log(1 + 2 + 3 + "")
+
+console.log(String(1 + 2 + 3))
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+window.onload = function(){
+	
+	//<img>태그 요소 노드 생성
+	var img = document.createElement("img")
+	console.log(img)
+	
+	//--------------------------------------
+	
+	//<img>태그의 HTML 표준 속성
+	//src, alt, width, height, ...
+	//id, class, style, title, ...
+	
+	
+}
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

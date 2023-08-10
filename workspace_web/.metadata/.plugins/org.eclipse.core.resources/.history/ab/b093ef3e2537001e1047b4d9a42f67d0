@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$div.css('width', '400px')
+	$("#btnOk").on("click", sayHi)
+	$("#btnOk").on("mouseenter", red)
+	$("#btnOk").on("mouseleave", blue)
+	
+})
+
+function sayHi(){
+	console.log("sayHi")
+}
+function red(){
+	console.log("red")
+}
+function blue(){
+	console.log("blue")
+}
+
+</script>
+</head>
+<body>
+<div id="myDiv">
+	<button id="btnOk">확인</button>
+	<button id="btnAlert">알림</button>
+</div>
+</body>
+</html>

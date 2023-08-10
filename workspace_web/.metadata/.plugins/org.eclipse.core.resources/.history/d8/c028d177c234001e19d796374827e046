@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//전역 변수
+var result
+
+//덧셈 함수
+function add(n1, n2){
+	//전역 변수에 덧셈 결과 저장하기
+	result = n1 + n2;
+}
+
+//결과 출력 함수
+function print(){
+	console.log(result);
+}
+
+
+add(1, 2);
+print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

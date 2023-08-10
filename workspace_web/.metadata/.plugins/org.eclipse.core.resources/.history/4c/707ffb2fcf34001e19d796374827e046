@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//QUIZ.
+//현재 시 분 초 를 1초마다 출력하기
+
+//console출력
+//시:분:초 형태로 출력한다
+
+//----------------------------------------------------------------------------------
+// function showTime(){
+// var now = new Date()
+// 	console.log(now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds());
+// }
+// setInterval(showTime, 1000);
+
+//----------------------------------------------------------------------------------
+//숫자가 한 자리일 때 앞에 '0' 붙이기
+function showTime(){
+	var now = new Date();
+	
+	var h = ('0' + now.getHours()).slice(-2)
+	var m = ('0' + now.getMinutes()).slice(-2)
+	var s = ('0' + now.getSeconds()).slice(-2)
+	
+	if(h<10) h = "0" + h;
+	if(m<10) m = "0" + m;
+	if(s<10) s = "0" + s;
+	
+	console.log(h + ":" + m + ":" + s);
+}
+
+setInterval(showTime, 1000);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

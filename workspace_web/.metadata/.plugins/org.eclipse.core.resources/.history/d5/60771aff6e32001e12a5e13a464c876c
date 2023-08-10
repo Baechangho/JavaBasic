@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//JS 변수 선언
+//데이터타입을 종류별로 명시하지 않는다
+//var키워드를 이용한다
+var n1
+
+//JS 변수값 대입
+n1 = 12345
+n1 = 'Apple'
+n1 = true
+
+console.log(n1)
+
+console.log("----------")
+
+//선언과 동시에 초기화
+var n2 = 345.68
+
+console.log("n2", n2)
+console.log("n2", typeof n2)
+
+console.log("----------")
+
+var n3 = { a:1, b:2, 78:'Cherry'}
+
+console.log('n3', n3)
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//함수, function
+
+//JS함수 정의
+function func() {
+	
+	//수행코드
+	console.log("함수입니다")
+}
+
+//JS함수 호출
+func()
+func()
+func()
+
+//반환 데이터타입은 적지 않는다
+//반환코드(return 코드)는 사용한다
+
+//매개변수는 ()괄호 안에 작성한다
+
+console.log("------------------------")
+
+//변수 선언
+var func2
+
+func2 = function() {
+	
+	
+}
+	
+	
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

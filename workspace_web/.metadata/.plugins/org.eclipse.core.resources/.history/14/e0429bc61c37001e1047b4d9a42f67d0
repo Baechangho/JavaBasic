@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	var $chk1 = $("input[type='checkbox']").eq(0)
+	var $chk2 = $("input[type='checkbox']").eq(1)
+	
+	console.log($chk1)
+	console.log($chk2)
+	
+	//-------------------------------------------------------
+	
+	console.log($chk1.attr("checked"))
+	console.log($chk2.pro("checked"))
+	
+	
+})
+</script>
+</head>
+<body>
+
+<label>확인1 <input type="checkbox" checked></label>
+<label>확인2 <input type="checkbox" checked="checked"></label>
+
+</body>
+</html>

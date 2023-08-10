@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+#wrap div:nth-child(1) {	background-color: #f66; }
+#wrap div:nth-child(2) {	background-color: #6f6; }
+#wrap div:nth-child(3) {	background-color: #66f; }
+#wrap div:nth-child(4) {	background-color: #ff6; }
+#wrap div:nth-child(5) {	background-color: #f6f; }
+#wrap div:nth-child(6) {	background-color: #6ff; }
+
+#wrap {
+	width: 800px;
+	margin: 0 auto;
+	
+	display: table;
+	table-layout: fixed;
+}
+
+#wrap div {
+	display: table-cell;
+	
+/* 	width: 16.67%; */
+	height: 200px;
+	
+	text-align: center;
+	vertical-align: middle;
+	
+	font-size: 40px;
+	font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+
+<div id="wrap">
+
+<div>A</div>
+<div>B</div>
+<div>C</div>
+<!-- <div>D</div> -->
+<div>E</div>
+<!-- <div>F</div> -->
+<!-- <div style="background-color: #ccc">G</div> -->
+
+</div>
+
+</body>
+</html>

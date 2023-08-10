@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>form 태그</h1>
+<hr>
+
+<!-- form태그의 action 속성 -->
+<!-- 요청데이터를 포함하여 요청을 전달할 서버의 URL을 지정한다 -->
+<!-- ""로 비워두면 현재 보고 있는 페이지를 요청하게 된다 -->
+<!-- ->새로 고침처럼 동작한다 -->
+
+<!-- form태그의 method 속성 -->
+<!-- 요청 데이터를 서버로 전달하는 방식을 지정한다 -->
+<!-- get 또는 post를 적용할 수 있다 -->
+
+<!-- <form action="요청을 받아줄 서버 URL" method="get"> -->
+<form action="aaaaa" method="get">
+<!-- <form action="aaaaa" method="post"> -->
+	<input type="text" name="data1"><br><br>
+	<input type="text" name="data2"><br><br>
+	<input type="submit" value="전송">
+</form>
+
+<!-- <input type="text"> 태그 -->
+<!-- ->서버로 전송할 데이터를 사용자가 입력할 수 있도록 입력 창 생성 -->
+<!-- <input type="submit"> 태그 -->
+<!-- ->입력된 데이터를 서버로 전송하는 버튼 생성 -->
+
+<!-- --------------------------------------------------------------- -->
+
+<!-- http://localhost:8765/tag/aaaaa?data1=Apple&data2=Banana -->
+<!-- URL에는 서버의 경로 + 자원의 경로 가 표현되어 있다 -->
+<!-- 서버 경로 : http://localhost:8765 -->
+<!-- 자원의 경로 : /tag/aaaaa -->
+<!-- ? 기호는 전달데이터(요청파라미터)의 시작을 알린다 -->
+<!-- 전달데이터는 쿼리스트링 형식으로 작성된다 -->
+
+
+<hr>
+
+
+
+
+
+
+
+</body>
+</html>

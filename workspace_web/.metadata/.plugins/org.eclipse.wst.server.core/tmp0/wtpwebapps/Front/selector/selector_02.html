@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+#one{
+	color: blue;
+}
+
+/* ID의 값이 중복이어도 CSS스타일은 잘 적용된다 */
+/* 하지만, ID값은 반드시 고유한 값으로 중복되지 않게 지정해야 한다 */
+#two{
+	color: #ccc
+}
+
+#three{
+	color: red;
+	border: 3px double tomato;
+}
+
+</style>
+</head>
+<body>
+
+<h1>ID 선택자</h1>
+<hr>
+
+<p id="one">p 태그</p>
+<span id="two">span 태그</span>
+<div id="three">
+	div태그
+	<p id="two">div태그 내 p태그</p>
+	안녕안녕안녕
+</div>
+
+</body>
+</html>

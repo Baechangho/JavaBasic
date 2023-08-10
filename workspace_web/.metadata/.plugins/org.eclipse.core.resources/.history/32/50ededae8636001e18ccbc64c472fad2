@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	var $div = $('div')
+	
+	//width 속성
+	console.log("width", $div.css("width"))
+	
+	console.log("height", $div.css("height"))
+	
+	console.log("border", $div.css("border"))
+	
+	//-------------------------------------------
+	
+	$div.css('width', '200px')
+	
+})
+</script>
+</head>
+<body>
+<div style="width: 300px; height: 200px !important; border: 1px solid #ccc;">
+	<p>하나</p>
+	<p>둘</p>
+	<p>셋</p>
+</div>
+
+</body>
+</html>

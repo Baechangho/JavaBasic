@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//함수, function
+
+//JS함수 정의
+function func() {
+	
+	//수행코드
+	console.log("함수입니다")
+}
+
+//JS함수 호출
+func()
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+var data
+
+console.log( 'data', data )	//undefined
+
+console.log( 'data', typeof data )
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

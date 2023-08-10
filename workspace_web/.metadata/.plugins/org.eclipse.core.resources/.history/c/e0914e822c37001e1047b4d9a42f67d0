@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("input[name~='msg']").focus()
+	
+	//#btnSend에 클릭 이벤트 등록하기
+	$("#btnSend").click(function() {
+		console.log("#btnSend click")
+		
+		//-------------------------------------
+		
+		//입력값이 없을 때 처리 중단하기
+		if($(this).prev().val() == ''){
+			alert("[WARN] 내용을 입력하세요")
+			return
+		}
+		
+		//-------------------------------------
+		
+		//입력값이 있을 때 처리하기
+// 		alert("입력 메시지: " + $("input[name~='msg']").val())
+		alert("입력 메시지: " + $(this).prev().val())
+		
+		//입력창 초기화
+		$(this).prev().val("")
+	})
+	
+	
+// 	$("#btnSend").on("click", function(){
+// 		alert($("[name~='msg']").val())
+// 	})
+	
+// 	$(".input").on("keydown",function(){
+//         if(key.keyCode==13) {
+//         	$("#btnSend").trigger("click")
+//         }
+//     })
+})
+</script>
+</head>
+<body>
+<!-- QUIZ -->
+
+<!-- 전송버튼을 클릭하면 입력된 메시지를 alert()로 보여준다 -->
+
+<!-- 추가. -->
+<!-- 메시지 입력창에서 엔터키(13)를 누르면 #btnSend에 클릭이벤트를 발생시킨다 -->
+<div>
+	<input type="text" name="msg">
+	<button id="btnSend">전송</button>
+</div>
+</body>
+</html>

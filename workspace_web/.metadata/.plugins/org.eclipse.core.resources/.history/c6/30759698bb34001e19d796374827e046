@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//JS 변수 선언 키워드
+//var, let, const
+
+var data1 = 123;
+
+let data2 = 234;
+
+const data3 = 345;
+
+//--------------------------------------------------------
+
+var data4 = 77;
+var data4 = 88;
+var data4 = 99;
+
+data5 = 111;
+data5 = 222;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

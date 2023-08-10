@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	console.log("-- div > * --")
+	console.log($('div').children())
+	
+	console.log("-- div > * > * --")
+	console.log($('div').children().children())
+
+	console.log("-- div > * > #third --")
+	console.log($('div').children().children('#third'))
+	
+	//--------------------------------------------------
+	
+	console.log("-- #here --")
+	console.log($("#here"))
+	
+	console.log("-- #here 부모 --")
+	console.log($("#here").parent())
+	
+	console.log("-- #here 조상 --")
+	console.log($("#here").parents())
+	
+	console.log("-- #here 조상 중 #third --")
+	console.log($("#here").parents('#third'))
+	
+	//--------------------------------------------------
+
+	console.log("-- #third의 이전 인접 형제 --")
+	console.log($("#third").prev())	
+	
+	console.log("-- #third의 이전 일반 형제 --")
+	console.log($("#third").prevAll())	
+	
+	console.log("-- #third의 다음 인접 형제 --")
+	console.log("-- #third + * --")
+	console.log($("#third").next())	
+	
+	console.log("-- #third의 다음 일반 형제 --")
+	console.log("-- #third ~ * --")
+	console.log($("#third").nextAll())	
+	
+	console.log("-- #third ~ li --")
+	console.log($("#third").nextAll("li"))	
+	
+	
+})
+</script>
+</head>
+<body>
+<div>
+
+<ul>
+	<li>하나</li>
+	<li>둘</li>
+	<li id="third">
+		셋
+		<ul>
+			<li>3-1</li>
+			<li id="here">3-2</li>
+			<li>3-3</li>
+		</ul>
+	</li>
+	<li>넷</li>
+	<li>다섯</li>
+</ul>
+
+</div>
+</body>
+</html>

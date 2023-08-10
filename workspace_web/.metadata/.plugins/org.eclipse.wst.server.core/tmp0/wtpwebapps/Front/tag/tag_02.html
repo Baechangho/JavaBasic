@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div>
+
+<div>
+<h1>글자 관련 태그</h1>
+<h3>hn, p, pre, blockquote</h3>
+</div>
+
+
+<!-- HoRizon, 수평선, 경계선 -->
+<hr>
+
+
+<div>
+기본텍스트
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+</div>
+
+<hr>
+
+<div>
+
+<p>가나다라마<br>
+마사아자차<br>
+카타파하</p>
+
+<!-- br태그: line BReak, 줄바꿈 태그 -->
+
+<!-- HTML코드는 기본적으로 컨텐츠의 공백 문자를 무시한다 -->
+<!-- 공백문자를 여러 개 적어도 띄어쓰기 1개로 바꿔서 표현한다 -->
+
+<p>AB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDE<br>
+F&ensp;GHI<br><br><br>
+JK&emsp;&emsp;&emsp;L</p>
+
+<!-- nbsp -->
+<!-- No Break SPace -->
+<!-- 개행없이 띄어쓰기 한 칸 -->
+
+<!-- emsp -->
+<!-- EleMent SPace -->
+<!-- em크기 단위 만큼 띄어쓰기 한 칸 -->
+<!-- em크기 == 글자 1개 -->
+
+<!-- ensp -->
+<!-- ensp 크기의 반절만큼 크기로 띄어쓰기 한 칸 -->
+
+<p>아아아아아아아아아
+<p>하하하하하하하ㅎ하하
+<p>가가가까가가나ㄹ라마바
+
+<!-- <p>태그는 상하 여백(margin)을 가지고 있다 -->
+<!-- 상하 여백을 위아래 쪽에 있는 다른 태그를 밀어낸다 -->
+
+<!-- </p>닫는 태그 없이 다음 <p>태그가 나오면 안된다 -->
+<!-- -><p>태그는 다른 <p>태그를 자식으로 가질 수 없다 -->
+
+<!-- 브라우저가 해석할 때 알아서 닫는 태그를 추가하지만 -->
+<!-- 코드 작성할 때 조심해야 한다! -->
+
+<hr>
+
+<div>
+
+<pre>
+A				BCDE
+
+
+안	녕하		세 욥
+
+pre	태 그입니다
+</pre>
+
+<pre>
+import java.util.Scanner;
+
+public class Test{
+
+	public static void main(String[] args){
+	
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		
+		System.out.println("num : " + num);
+		
+	}
+	
+}
+</pre>
+
+<hr>
+
+<div>
+기본 텍스트
+<blockquote>"오늘 날씨가 매우 덥네요"</blockquote>
+그냥 작성한 문장
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

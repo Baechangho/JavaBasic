@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+::first-line {
+	color: blue;
+}
+
+::first-letter {
+	color: red;
+	font-size: 20px;
+}
+
+/* ------------------------------------------------ */
+
+.new::after {
+	content: "new";
+	
+	font-size: 10px;
+	background-color: #f66;
+	color: #fff;
+	
+	/* 내부 여백 : 상하없음 좌우2px */
+	/* 배경색의 범위가 넓어진다 */
+	padding: 0 2px;
+	padding-bottom: 2px;
+	
+	/* 배경의 모서리 */
+	border-radius: 4px;
+}
+
+span::before {
+	/* 가상 요소에 적용될 컨텐츠(내용물) */
+	content: "span\A before";
+	
+	/* \A 는 ASCII 10(개행문자)를 나타내며
+	공백문자에 대한 처리때문에 처음에는 적용되지 않는다 */
+	
+	/* 공백문자를 처리하는 방식 지정 */
+	white-space: pre;
+	
+	color: orange;
+	background-color: gray;
+}
+
+/* ------------------------------------------------ */
+
+p:not(.new){
+	background-color: #eee;
+}
+
+</style>
+</head>
+<body>
+
+<p class="new">첫 번째(p)</p>
+<span>두 번째(span)</span>
+<div class="new">세 번째(div)</div>
+<p>네 번째(p). 무덤 계집애들의 보고, 이름자 밤이 하나에 이런 우는 나는 버리었습니다. 않은 무엇인지 새겨지는 하늘에는 헤일 오면 내 어머님, 까닭입니다. 당신은 내린 별을 거외다.
+
+
+
+
+</body>
+</html>

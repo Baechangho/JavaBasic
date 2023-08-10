@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.onload = function(){
+	var content = document.getElementById("content")
+	console.log(content)
+	
+	//DOM객체.innerHTML 속성
+	content.innerHTML = "<h3>innerHTML</h3>"
+	
+	console.log(content.innerHTML)
+}
+</script>
+</head>
+<body>
+<div id="content">
+CONTENT
+</div>
+
+</body>
+</html>

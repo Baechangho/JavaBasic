@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//JS 데이터타입
+//------------------------------------------------------------
+
+//Number
+console.log(12345)
+console.log(123.456)
+
+//String
+console.log('Apple')
+console.log("Banana")
+
+//Boolean
+console.log(true)
+console.log(false)
+
+console.log("-----")
+
+//Object 타입
+console.log( {} ) //빈 객체, Empty Object
+console.log( { "key":"value", 1:'Apple', b:234, 'c':true} )
+
+//객체(Object)의 key는 String타입이다
+//  console.log( { "key":"value", 1:'Apple', b:234, 'c':true} )
+//==console.log( { key:"value", "1":'Apple', "b":234, "c":true} )
+//객체(Object)의 value는 JS의 모든 타입으로 사용 가능하다
+
+//key는 문자를 나타내는 "",''를 적용하지 않아도 문자로 인식
+
+console.log("-----")
+
+//Array타입
+console.log( [] ) // 빈 배열, Empty Array
+console.log( [10, 20, 30, 40, 50] )
+
+console.log([true, 'a', 123, 45.6, {a:1,b:2}, ['f',1]])
+
+console.log("-----")
+
+//typeof 연산자
+// 데이터의 자료형을 반환하는 연산자
+
+//typeof(데이터)
+//typeof 데이터
+
+console.log(typeof(123))
+
+console.log(123 + ":" + typeof(123))
+console.log(123 , ":" , typeof(123))
+console.log(123 , typeof(123))
+
+//console.log()를 이용하여 여러 데이터를 출력할 땐
+//,콤마로 항목을 구분하여 출력한다
+
+console.log(123)
+console.log(typeof(123))
+
+console.log("-----")
+
+console.log( {a:1,b:2}, typeof {a:1,b:2})
+
+console.log( [true,3], typeof([true,3]))
+
+//Array타입은 JS 내부 문법으로 Object타입을 이용한다
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

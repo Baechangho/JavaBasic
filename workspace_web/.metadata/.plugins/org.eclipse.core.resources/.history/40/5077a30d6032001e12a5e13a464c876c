@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//한 줄 주석
+/* 문장 주석 */
+
+//------------------------------------------------
+
+//출력1. 알림창 띄우기 - alert() 함수
+
+/* alert(); 
+alert(123);
+alert(123.456);
+alert("Hello");
+alert('Hi'); */
+
+// 자바스크립트의 실행코드에는
+// ;세미콜론을 코드 마지막에 적는 것이
+// 필수가 아니다
+
+//------------------------------------------------
+
+//출력2. <body>영역에 출력하기
+
+document.write('Hello Javascript')
+document.write('<h3>하이</h3>')
+document.write('<h5>태그 코드 적용</h5>')
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+<h1>JS 테스트</h1>
+<h3>자바스크립트를 이용한 출력</h3>
+<h3>브라우저에 보여질 내용 작성</h3>
+
+
+
+</body>
+</html>

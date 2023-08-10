@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//변수의 스코프, Scope
+//변수의 유효범위
+//변수의 인식범위
+//변수를 사용할 수 있는 범위
+
+//----------------------------------------------
+
+//에러, 선언되지 않은 변수(식별자)를 사용함
+// console.log(data)
+
+//----------------------------------------------
+
+console.log("선언 전", num)
+
+var num = 10;
+
+console.log("선언 후", num)
+
+//JS엔진은 코드 실행 전(정적인 시점)에
+//선언된 변수를 전부 생성한다
+//단, 초기화는 하지 않는다
+//->undefined 상태가 된다
+
+//선언 코드가 존재하는 변수는 선언 코드 이전에 접근 가능
+
+//호이스팅(Hoistiong)현상
+//->선언된 변수를 스코프 내에서 선언 이전부터 접근 가능한 현상
+
+//----------------------------------------------
+
+//전역 변수, Global Variable
+//Global Scope(전역 스코프)에 선언된 변수
+//<script>태그에 곧바로 선언된 변수
+
+var global_var = 1234;
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>하이퍼링크 태그</h1>
+<h3>a</h3>
+<hr>
+
+<!-- href 속성(Attribute)이 있어야 하이퍼링크로 동작한다 -->
+<a href>링크</a>
+<br><br><hr>
+
+<div id="top">
+	<h1>여기가 TOP!!</h1>
+</div>
+
+<a href="#bottom">BOTTOM 으로 가기</a>
+
+
+
+
+
+<hr>
+
+<!-- href 속성이 ""로 비어있으면 현재 페이지를 다시 요청한다 -->
+<a href>href속성 적용한 a태그</a>
+<a href="">href속성 적용한 a태그</a>
+
+<hr>
+
+<a href="https://www.google.com/">구글로 이동</a><br>
+
+<a href="https://www.google.com/" target="_blank">구글로 이동 (새 탭)</a><br>
+
+<a href="https://www.google.com/" target="_self">구글로 이동 (현재 탭)</a><br>
+
+<hr>
+<!-- 절대 경로 URL -->
+<!-- Absolute URL -->
+<!-- 도메인주소를 포함한 전체 URL을 뜻한다 -->
+
+<!-- 다른 사이트로 하이퍼링크를 적용할 때 사용한다 -->
+
+<a href="https://www.naver.com" target = "_blank">네이버</a><br>
+
+<!-- ctrl + shift + c == F12 -->
+<a href="https://www.kh-academy.co.kr/community/notice.kh" target = "_blank">KH</a><br>
+
+<hr>
+
+<!-- 상대 경로 URL -->
+<!-- Relative URL -->
+
+<!-- 도메인 주소를 생략하고 자원(파일)의 경로만 적은 URL -->
+
+<!-- 같은 사이트 내에서 다른 페이지로 이동할 때 사용한다 -->
+<!-- 사이트 기준점이 현재 보고있는 사이트가 된다 -->
+
+<!-- 메뉴를 구성할 때 사용할 수 있다 -->
+
+<ul>
+	<li><a href = "/tag/tag_01.html">하나</a></li>
+	
+	<li><a href = "tag_02.html">둘</a></li>
+	
+	<!-- 에러, 페이지 없음 -->
+	<li><a href = "../abc">셋</a></li>
+	
+	<li><a href = "../test.html">넷</a></li>
+	
+	<li><a href = "./tag_03.html">다섯</a></li>
+</ul>
+
+<!-- ./ -->
+<!-- 보고있는 페이지의 현재 디렉토리 -->
+<!-- 디렉토리 지정문자 없이 바로 자원(파일) 이름으로 사용가능 -->
+
+<!-- ../ -->
+<!-- 보고있는 페이지의 부모 디렉토리 -->
+
+<!-- / -->
+<!-- 보고있는 페이지의 루트 디렉토리 -->
+
+<hr>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet nisl sed neque accumsan posuere. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam malesuada augue eu urna facilisis suscipit. Duis fringilla magna et augue scelerisque, nec facilisis tortor luctus. Sed odio risus, fermentum vitae commodo non, pretium sit amet orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc varius massa orci, eget iaculis felis ullamcorper at. Nulla tristique, odio sit amet semper fermentum, urna ligula sollicitudin arcu, ac mattis felis nisi non dui. Morbi a iaculis risus, a pretium turpis. Aliquam sit amet interdum est. Morbi ultrices sit amet eros quis euismod. Vivamus quis porta justo. Duis sodales, ipsum sit amet lobortis bibendum, velit magna feugiat justo, in lacinia est lorem sed eros.
+
+<p>Sed id erat nec urna hendrerit ultrices nec sit amet mauris. Aenean rhoncus ornare aliquet. Morbi a ligula vel metus semper iaculis. Maecenas dui mi, vehicula id rhoncus vel, iaculis non orci. Suspendisse maximus rutrum ex eget rutrum. Quisque nec auctor arcu, ut pretium odio. Donec condimentum elit id porta ultricies. Pellentesque lobortis metus ante, eu pretium odio sagittis id.
+
+<p>Nullam libero enim, porttitor nec dolor ut, condimentum venenatis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at velit vel magna maximus facilisis nec eu metus. Ut ligula dolor, rhoncus at nibh eget, malesuada feugiat velit. In eget dui at risus pharetra dapibus. Curabitur eu nisl id urna lacinia ullamcorper a sit amet velit. Sed pretium a velit nec varius. Phasellus ac malesuada nisl. Integer mattis iaculis nulla, vel porta est porttitor ut. Proin faucibus, magna in varius ornare, ipsum lacus consequat diam, eu elementum lacus urna ut dolor. Nullam ac risus in enim scelerisque aliquet. Ut id tempor nibh.
+
+<p>Praesent pulvinar id arcu sed tincidunt. Quisque consequat mauris rutrum sagittis cursus. Suspendisse sit amet molestie ex. In congue varius neque, ac dignissim ante. Sed faucibus at orci facilisis lacinia. Etiam interdum mollis neque. Donec ac ullamcorper enim. Aliquam magna nibh, lacinia consequat aliquet at, ultrices sit amet turpis.
+
+<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur commodo sollicitudin metus aliquet fermentum. Nullam quis lacinia tellus. Vivamus elementum pellentesque metus, eu tempus magna volutpat sed. Sed molestie commodo metus, ac fermentum ante suscipit ac. Integer orci nisi, egestas et arcu vitae, pellentesque fermentum augue. Quisque purus orci, euismod in justo vel, commodo mollis mi. Fusce vulputate orci orci, vel pellentesque nisi laoreet vitae. Donec rutrum mattis leo ut molestie. Quisque eleifend, diam sed pulvinar convallis, nunc justo eleifend dui, vel accumsan libero erat id ex.
+
+<hr>
+
+<!-- id속성 -->
+<!-- 해당 태그의 식별자(이름)를 붙여준다 -->
+<div id="bottom">
+	<h1>여기가 BOTTOM!</h1>
+</div>
+<a href="#top">TOP 으로 가기</a>
+
+
+</body>
+</html>

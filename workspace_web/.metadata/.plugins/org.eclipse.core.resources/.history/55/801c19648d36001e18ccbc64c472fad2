@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	var $div = $('div')
+	
+	//width 속성
+	console.log("width", $div.css("width"))
+	//height 속성
+	console.log("height", $div.css("height"))
+	//border 속성
+	console.log("border", $div.css("border"))
+	
+	//-------------------------------------------
+	
+	//속성인자로 2개를 넣으면 직접 수정한다
+	//!important를 설정할 수 없다
+	//->잘못된 값을 설정했다고 판단
+	//->설정값을 무시한다
+	$div.css('width', '200px !important')
+	
+	//정상적으로 반영
+	$div.css('width', '400px')
+	
+	//-------------------------------------------
+	
+	//기본 형태의 객체
+	//->jQuery에서는 PlainObject 라고 부른다
+	//->배열 제외
+	//->내장객체 제외
+	var obj = {
+			'key': 'value'
+			,key2: 12345
+	}
+	
+	console.log(obj)
+	
+	//-------------------------------------------
+	
+	//스타일 속성들을 PlainObject 형태로 저장하기
+	var styleObj = {
+			'width': '200px'
+			, 'height': '300px'
+			, 'border-color': 'blue'
+	}	
+	
+	console.log(styleObj)
+	
+	$div.css(styleObj)
+	
+	//-------------------------------------------
+	//setter역할
+	//key값에''를 쓰지않으면 '-'를 사용할수 없다
+	$div.css({
+		'text-decoration': 'underline'
+		, color: 'tomato'
+		, 'font-size': '2em'
+		, 'text-align': 'center'
+	})
+	
+	//-------------------------------------------
+	//getter역할
+	//CSS 속성의 값을 PlainObject 타입으로 반환한다
+	var info = $div.css(['width', 'height', 'border-width'])
+	
+	console.log(info)
+	
+	console.log(info.width)
+	//에러, -기호를 뺄셈 연산자로 인식한다
+// 	console.log(info.border-width)
+	
+	//undefined, Camel Case 로 자동 변환되지 않는다
+// 	console.log(info.borderWidth)
+	
+	console.log(info['border-width'])
+	console.log(info['width'])
+})
+</script>
+</head>
+<body>
+<div style="width: 300px; height: 200px !important; border: 1px solid #ccc;">
+	<p>사</p>
+	<p>직</p>
+	<p>서</p>
+</div>
+
+</body>
+</html>

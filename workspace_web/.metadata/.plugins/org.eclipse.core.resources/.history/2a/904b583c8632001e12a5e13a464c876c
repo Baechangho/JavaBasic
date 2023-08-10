@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+console.log(50)		//number
+console.log("50")	//string
+
+console.log("------------------------")
+
+console.log(50 + "50")
+console.log("50" + 50)
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

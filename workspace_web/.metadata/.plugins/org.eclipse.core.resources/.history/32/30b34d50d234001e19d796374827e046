@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//window객체
+console.log(window)
+
+//전역 변수
+var data = 123
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

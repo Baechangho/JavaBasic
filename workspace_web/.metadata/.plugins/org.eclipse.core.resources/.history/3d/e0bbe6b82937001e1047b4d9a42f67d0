@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	
+	$("#btnSend").on("click", function(){
+		alert($("#input").html())
+	})
+})
+</script>
+</head>
+<body>
+<!-- QUIZ -->
+
+<!-- 전송버튼을 클릭하면 입력된 메시지를 alert()로 보여준다 -->
+
+<!-- 추가. -->
+<!-- 메시지 입력창에서 엔터키(13)를 누르면 #btnSend에 클릭이벤트를 발생시킨다 -->
+<div>
+	<input type="text" name="msg">
+	<button id="btnSend">전송</button>
+</div>
+</body>
+</html>

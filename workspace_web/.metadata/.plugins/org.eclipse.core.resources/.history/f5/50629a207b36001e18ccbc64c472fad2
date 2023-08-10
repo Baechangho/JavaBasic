@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	
+	//새로운 <div>태그 노드 객체 생성하기
+	var $div = $("<div>")
+	
+	//객체는 생성되어 출력으로 확인가능
+	console.log($div)
+	
+	
+	
+})
+</script>
+</head>
+<body>
+<div id="myDiv">
+	<p>안녕</p>
+</div>
+</body>
+</html>

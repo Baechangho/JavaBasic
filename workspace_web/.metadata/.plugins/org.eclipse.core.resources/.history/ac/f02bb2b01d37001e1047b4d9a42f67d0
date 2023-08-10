@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	var $chk1 = $("input[type='checkbox']").eq(0)
+	var $chk2 = $("input[type='checkbox']").eq(1)
+	
+	console.log($chk1)
+	console.log($chk2)
+	
+	//-------------------------------------------------------
+	
+	console.log($chk1.attr("checked"))	//"checked" (string)
+	console.log($chk2.prop("checked"))	//true (boolean)
+	
+	//.attr()함수는 string타입의 HTML 속성을 다룬다
+	//.prop()함수는 boolean타입으로  JS DOM객체의 프로퍼티를 다룬다
+	
+	//-------------------------------------------------------
+	
+	//JS DOM API
+	
+	console.log($chk1.get(0).getAttribute("checked"))
+	console.log($chk1.get(0).getAttribute("checked"))
+	
+})
+</script>
+</head>
+<body>
+
+<label>확인1 <input type="checkbox" checked></label>
+<label>확인2 <input type="checkbox" checked="checked"></label>
+
+</body>
+</html>

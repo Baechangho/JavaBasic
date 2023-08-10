@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	//#btnOk 생성
+	var $btnOk = $("<button>")
+				.attr("id", "btnOk")
+				.html("확인");
+	
+// 	$btnOk.prependTo($("div"))
+
+	//----------------------------------------------------
+	
+	$("#btnAlert").on("click", function(){
+// 		console.log("#btnAlert click")
+
+		$btnOk.prependTo($("div"))
+	})
+	
+	//이벤트 등록되지 않음
+	$("#btnOk").on("click", function(){
+		console.log("#btnOk click")
+	})
+	
+	//이벤트 리스너가 등록되는 시점에 #btnOk가
+	//DOM트리에 존재하지 않는다
+	
+	//동적으로(실행 중에) 추가된 노드 요소에는 
+	//직접 이벤트 리스너를 등록할 수 없다
+	
+	//해결법
+	//동적으로 추가될 요소의 조상 노드에 이벤트 리스너를 등록한다
+	//이벤트에 반응할 영역을 필터링할 수 있다
+	
+	//-------------------------------------------------------------
+	
+	$("div").on("click", "#btnOk", function(){
+		console.log("div #btnOk click")
+		
+		//#btnAlert의 click 이벤트 리스너 해제하기
+		$("#btnAlert").off("click")
+	})
+	
+	//-------------------------------------------------------------
+	
+	$("#btnCancel").on("click", function(){
+		console.log("#btnCancel click")
+		
+		//#btnOk 클릭 이벤트 제거하기
+		//->#btnOk에 등록된 click이벤트 리스너가 없다
+		//->이벤트 제거되지 않음
+		$("btnOk").off("click")
+		
+		$("div").off("click", "#btnOk")
+		
+	})
+})
+</script>
+</head>
+<body>
+<div>
+	<button id="btnAlert">알림</button>
+	
+	<button id="btnCancel">확인 이벤트 제거</button>
+</div>
+</body>
+</html>

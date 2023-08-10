@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+var str = "apple banana cherry application"
+
+//----------------------------------------------
+
+//문자열.match(정규식)
+
+console.log(res)
+
+console.log(str.match(/banana/))
+
+//null반환, 패턴에 맞는 데이터 없음
+console.log(str.match(/orange/))
+
+console.log("------------------")
+
+//g플래그 없음
+//->첫 번째에 매칭되는 패턴문자 1개만 찾고 반환
+console.log(str.match(/appl/))
+
+//g플래그 있음
+//->매칭되는 패턴 모두 찾아 반환
+console.log(str.match(/appl/g))
+
+//----------------------------------------------
+
+//문자열.replace(정규식, 교체문자열)
+
+var res = str.replace(/app/, 'TEST')
+
+console.log("원본", str)
+
+console.log("교체", res)
+
+//----------------------------------------------
+
+var res = str.replace(/app/g, 'NEXT')
+
+console.log("원본", str)
+
+console.log("교체", res)
+
+//----------------------------------------------
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//window객체
+console.log(window)
+
+//전역 변수
+var data = 123
+
+console.log(window)
+console.log(window.data)
+
+//------------------------------------------------------------
+
+function func(){
+	console.log('test')
+}
+func()
+window.func()
+
+//------------------------------------------------------------
+
+console.log("---navigator---")
+console.log(window.navigator)
+
+//브라우저 + 운영체제의 정보 속성
+console.log(navigator.userAgent)
+
+//언어권(Locale) 정보
+console.log(navigator.language)
+
+//브라우저 벤더사, 배포 회사
+console.log(navigator.vendor)
+
+//------------------------------------------------------------
+
+console.log('---location---')
+console.log(window.location)
+
+console.log("프로토콜", location.protocol)
+console.log("도메인주소", location.host)
+console.log("호스트네임", location.hostname)
+console.log("포트", location.port)
+console.log("자원의 경로", location.pathname)
+
+console.log("---전체 URL---")
+console.log(location.href)
+
+//자바스크립트로 페이지 이동시키는 코드
+// location.href = "https://www.naver.com/"
+// location.href = "/tag/tag_06.html"
+
+//<a>태그의 링크를 클릭하는 것과 같은 효과
+
+//------------------------------------------------------------
+
+console.log('---history---')
+console.log(window.history)
+
+//이전 방문 페이지로 이동
+//history.back()
+
+//다음 방문 페이지로 이동
+//history.forward()
+
+//history.go(n)
+//n은 정수
+//히스토리를 이동할 페이지 수를 지정한다
+
+//양수는 다음 페이지
+//음수는 이전 페이지
+//0은 현재 페이지
+
+//이전 페이지로 이동
+// history.go(-1)
+//==history.back()
+
+//------------------------------------------------------------
+
+console.log('---screen---')
+console.log(window.screen)
+
+//브라우저를 최대화했을 때 차지하는 영역의 크기
+//작업표시줄(시작메뉴줄) 높이 40px 제외된다
+console.log(screen.availWidth)
+console.log(screen.availHeight)
+
+console.log("------------")
+
+//모니터 해상도 크기
+console.log(screen.width)
+console.log(screen.height)
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	
+	console.log($("div"))
+	
+	//.find(selector) - 자손 노드 찾기
+	console.log($("div").find("#stop"))
+	
+	//자손 선택자를 이용한 것과 같다
+	console.log($("div #stop"))
+	
+	console.log("-------------------")
+	
+	//DOM객체.is(DOM객체)
+	
+	
+})
+</script>
+</head>
+<body>
+<div>
+	<span>하나</span>
+	<p>둘</p>
+	<pre>셋</pre>
+	<p id="stop">넷</p>
+	<p>다섯</p>
+</div>
+</body>
+</html>

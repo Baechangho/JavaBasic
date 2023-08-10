@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/* 전체 선택자 */
+/* 모든 태그를 선택한다 */
+*{
+/* font-size: 20px; */
+	/* 모든 태그에 기본 CSS설정을 넣을 때 사용한다 */
+	/* 브라우저의 기본 CSS를 없앨 때에도 사용한다 */
+	
+	/* 기본 폰트(글꼴)을 적용할 때 사용한다 */
+	font-family: 돋움, dotum, helvetica;
+	
+	/* 크기 속성값을 0 으로 넣으면 속성 설정이 없어진다 */
+	padding: 0;	/* 내부 여백 */
+	margin: 0;	/* 외부 여백 */
+}
+
+/* p 태그 선택자 */
+p{
+	/* 내부 여백 */
+	padding: 10px;
+	
+	/* 외부 여백 */
+	margin: 5px;
+		
+/* background: 배경 지정 */
+/* background-color: 배경색상 지정 */
+/* 내부 영역에 대한 배경을 지정한다 */
+/* 외부 영역인 margin은 포함하지 않는다 */
+/* background: yellow; */
+/* 	background-color: yellow; */
+	
+	/* 배경으로 이미지를 지정한다 */
+	/* background: url(https://i.imgur.com/09XtYSI.gif); */
+	background: url(https://i.imgur.com/09XtYSI.gif);
+	/* 글자색 지정 */
+	color: cyan;
+}
+
+/* body 태그 선택자 */
+body{
+	background-image: url(https://i.imgur.com/yzawecO.gif);
+	
+	/* 배경 이미지의 크기 지정 */
+/* 	background-size: 600px 400px; */
+/* 	background-size: cover; */
+	background-size: contain;
+
+	/* background-size의 속성값 */
+	/* 너비 높이: 너비와 높이를 크기단위로 직접 지정한다 */
+	/* cover: 요소의 너비에 맞춰 배경이미지의 너비를 지정한다 */
+	/* contain: 요소의 높이에 맞춰 배경이미지의 높이를 지정한다 */
+	/* cover, contain 모두 이미지 전체 크기는 원본 비율에 맞게 조정된다 */
+	
+	/* 배경 이미지의 반복 패턴 지정하기 */
+/* 	background-repeat: repeat; */		/* x, y축 모두 반복 */
+/* 	background-repeat: no-repeat; */	/* 반복하지 않음 */
+/* 	background-repeat: repeat-x; */		/* x축만 반복 */
+	background-repeat: repeat-y;		/* y축만 반복 */
+}
+
+/* span 태그 선택자 */
+span {
+	/* 글자색: magenta */
+	color: #f0f;
+	
+	/* inline요소는 너비, 높이가 적용되지 않는다 */
+	width: 50000000px;
+	height: 40000000px;
+	
+	/* 외부 여백 */
+	/* inline요소는 상하 외부 여백이 적용되지 않는다 */
+	margin: 50px;
+}
+
+/* div 태그 선택자 */	
+div {
+	/* border: 테두리 */
+	border: 3px dotted #f00;
+	
+	/* 너비, 높이 설정 */
+	/* block요소는 너비를 설정할 경우 부모 요소 너비에 비해 
+	남는 공간을 자동 마진으로 채운다*/
+	width: 300px;
+	height: 300px;
+	margin: 50px;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>선택자</h1>
+<hr>
+
+<p>p 태그</p>
+<span>span 태그</span>
+<div>
+	div태그
+	<p>div태그 내 p태그</p>
+	안녕안녕안녕
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//정규식 기본 문법
+
+//	/pattern/flag
+
+//----------------------------------------------
+
+//정규식 리터럴 변수에 저장
+
+var regex = /pattern1/g
+
+console.log(regex)
+
+console.log(/pattern2/i)
+
+//----------------------------------------------
+
+var regObj = new RegExp()
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

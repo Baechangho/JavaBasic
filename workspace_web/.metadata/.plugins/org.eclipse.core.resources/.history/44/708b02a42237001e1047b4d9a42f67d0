@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	//#btnOk 생성
+	var $btnOk = $("<button>")
+				.attr("id", "btnOk")
+				.html("확인");
+	
+// 	$btnOk.prependTo($("div"))
+
+	//----------------------------------------------------
+	
+	$("#btnAlert").on("click", function(){
+// 		console.log("#btnAlert click")
+
+		$btnOk.prependTo($("div"))
+	})
+	
+	//이벤트 등록되지 않음
+	$("#btnOk").on("click", function(){
+		console.log("#btnOk click")
+	})
+	
+	//이벤트 리스너가 등록되는 시점에 #btnOk가
+	//DOM트리에 존재하지 않는다
+	
+	//동적으로(실행 중에) 추가된 노드 요소에는 
+	//직접 이벤트 리스너를 등록할 수 없다
+})
+</script>
+</head>
+<body>
+<div>
+	<button id="btnAlert">알림</button>
+	
+	<button id="btnCancle">확인 이벤트 제거</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//*연산은 string타입을 대상으로 수행할 수 없다
+//string을 number로 변환해야 연산 가능하다
+
+console.log("123")
+console.log("123" * 1)
+
+console.log("------------------------")
+
+//문자에 +연산을 하면 문자로 합쳐진다
+//""빈문자열을 이용하여 전체 문자로 연결되도록 유도한다
+
+console.log(1 + 2 + 3)
+
+console.log("" + 1 + 2 + 3)
+console.log(1 + 2 + 3 + "")
+
+console.log(String(1 + 2 + 3))
+
+
+for(var i = 0; i < 5; i++){
+	console.log(i)
+}
+
+var i = 0;
+while(i<3){
+	console.log(i)
+	
+	i++;
+}
+
+switch(i){
+case 0:
+	console.log('a')
+	break;
+case 3:
+	console.log('c')
+	break;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

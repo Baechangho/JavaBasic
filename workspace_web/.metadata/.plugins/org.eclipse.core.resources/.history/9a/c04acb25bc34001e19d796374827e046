@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//JS 변수 선언 키워드
+//var, let, const
+
+var data1 = 123;
+
+let data2 = 234;
+
+const data3 = 345;
+
+//--------------------------------------------------------
+
+//var변수는 이미 선언된 변수이름을 다시 사용하여 선언해도 된다
+//->같은 변수로 인식된다
+var data4 = 77;
+var data4 = 88;
+var data4 = 99;
+
+//선언하지 않은 변수를 대입해서 사용해도 된다
+//->선언한 것으로 인식된다
+data5 = 111;
+data5 = 222;
+
+//--------------------------------------------------------
+
+let data6 = 444;
+
+//에러, let변수는 선언코드에 이미 사용한 식별자 사용 불가
+// let data6 = 555;
+
+//--------------------------------------------------------
+
+let data7 = 555;
+
+console.log("data7", data7)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

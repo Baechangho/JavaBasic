@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//NaN, Not a Number
+
+console.log(NaN)
+console.log(NaN, typeof NaN)
+
+console.log(NaN + 12345)
+
+console.log("------------------------")
+
+//parseInt() 내장함수
+//매개변수의 문자를 숫자로 변환(치환)하는 함수
+//숫자 형식이 아니면 NaN을 반환한다
+
+console.log(parseInt('3456'))
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

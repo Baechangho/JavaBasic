@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//NaN, Not a Number
+
+console.log(NaN)
+console.log(NaN, typeof NaN)
+
+console.log(NaN + 12345)
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
