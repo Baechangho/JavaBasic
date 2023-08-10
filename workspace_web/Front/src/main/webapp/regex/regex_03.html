@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	
+	$("#userid").blur(function() {
+		console.log('#userid blur')
+		
+		//파랑 글자색상 제거하기
+		$("#uid_msg")
+			.css("color", "")
+		
+		//아이디를 입력했는지 검증하기
+		if($(this).val() == ''){
+			$("#uid_msg").html("아이디를 입력하세요")
+			return
+		}
+		
+		//아이디의 패턴 검증
+		//-> 영문자, 숫자로 구성된 4~12글자
+		var idReg = /^[a-zA-Z0-9]{4,12}$/
+		
+		//-> 추가, 숫자로 시작하면 안된다
+		var idReg = /^[a-zA-Z][a-zA-Z0-9]{3,11}$/
+		
+		if(idReg.test($(this).val())){
+			$("#uid_msg")
+			.html("사용가능한 아이디입니다")
+			.css("color", "blue")
+		}else{
+			$("#uid_msg")
+			.html("아이디는 4~12 글자로 작성하세요")
+		}
+	})
+	
+})
+</script>
+<style type="text/css">
+.msg{
+	color: red;
+	font-size: 0.5em;
+	margin-left: 60px;
+}
+
+
+
+</style>
+</head>
+<body>
+<form action="" method="get">
+<label for="userid">아이디</label>
+<input type="text" id="userid" name="userid"><br>
+<span id="uid_msg" class="msg"></span><br><br>
+
+<button>회원가입</button>
+
+</form>
+
+
+</body>
+</html>
